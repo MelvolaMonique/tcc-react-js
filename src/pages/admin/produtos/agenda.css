@@ -1,0 +1,29 @@
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Ajuste conforme necessário para a altura desejada */
+}
+
+.custom-calendar {
+  background-color: #81b8f3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.custom-calendar .react-calendar__navigation {
+  background-color: #4b8ed6;
+}
+
+.custom-calendar .react-calendar__navigation__label {
+  color: #fff;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #0056b3;
+  color: rgb(241, 237, 224);
+}

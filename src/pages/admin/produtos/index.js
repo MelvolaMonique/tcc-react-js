@@ -3,6 +3,7 @@ import {useState} from 'react'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Time from './Time.js';
+import Agenda from '../produtos/agenda.css'
 
 function Produtos() {
   const [date, setDate] = useState(new Date())
@@ -10,10 +11,11 @@ function Produtos() {
 
 
     return (
+
 <div className="produtos">
-   <h1 className="header">React Calendar</h1>
+   <h1 className="header">Calendário</h1>
    <div className="calendar-container">
-     <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)}/>
+     <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)} className="custom-calendar"/>
    </div>
 
    <div className="text-center">
