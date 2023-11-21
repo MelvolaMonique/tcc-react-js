@@ -16,20 +16,17 @@ function Times(props) {
 }
 
 return (
-
- <div className="times">
-   {time.map(times => {
-    return (
-    <div>
-      <button onClick={(e)=> displayInfo(e)}> {times} </button>
+  <div className="times">
+    <div className="buttons-container">
+      {time.map((times, index) => (
+        <button key={index} onClick={(e) => displayInfo(e)}>{times}</button>
+      ))}
     </div>
-        )
-     })}
-    <div>
+    <div className="info-container">
       {info ? `Seu compromisso está marcado para ${event} ${props.date.toDateString()}` : null}
     </div>
- </div>
-  )
+  </div>
+);
 }
 
 export default Times;
